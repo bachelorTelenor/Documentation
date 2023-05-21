@@ -49,7 +49,7 @@ When the server is running, you can start the client. The option used during thi
 .\iperf3.exe -c <SERVER_IP> -tinf -J --logfile testLog.json -P 4
 ```
 
-This will initiate an upload test to ```SERVER_IP``` with 4 threads, using 4 threads, logging the results in JSON format to the file ```testLog.json```. The test will continue running until manually stopped. We have determined that utilizing multiple threads is necessary to achieve the maximum speed and fully utilize the connection's capacity. To test the download speed instead of upload, add the ```-R``` flag for reverse. 
+This will initiate an upload test to ```SERVER_IP``` with 4 threads, logging the results in JSON format to the file ```testLog.json```. The test will continue running until manually stopped. We have determined that utilizing multiple threads is necessary to achieve the maximum speed and fully utilize the connection's capacity. To test the download speed instead of upload, add the ```-R``` flag for reverse. 
 
 ### Web browser
 We had a few browser windows open during testing to gather additional information. We had one window open with the Meraki dashboard displaying the frequency band it was using, and another window with a live clock to ensure accurate time for the test.
